@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Admin Panel | Blank Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Styles -->
@@ -12,7 +13,7 @@
 
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
-    <div class="wrapper">
+    <div class="wrapper" id="app">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             
@@ -138,6 +139,8 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
