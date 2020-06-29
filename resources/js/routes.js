@@ -1,4 +1,6 @@
+import { AdminHome } from "./components/admin/AdminHome.vue";
+import { AdminContact } from "./components/admin/AdminContact.vue";
 export const routes = [
-    { path: "/foo", component: Foo },
-    { path: "/bar", component: Bar }
+    { path: "/home", component: AdminHome },
+    { path: "/contact", component: AdminContact }
 ];

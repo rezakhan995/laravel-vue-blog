@@ -1,11 +1,15 @@
+require("./bootstrap");
 
-require('./bootstrap');
-
-window.Vue = require('vue');
+window.Vue = require("vue");
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
-import {routes} from './routes'
+import { routes } from "./routes";
+
+Vue.component(
+    "admin-main",
+    require("./components/admin/AdminMaster.vue").default
+);
 
 const router = new VueRouter({
     routes: routes,
